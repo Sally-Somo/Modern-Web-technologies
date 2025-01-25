@@ -14,3 +14,12 @@ holidays.forEach(holiday =>{
 
 console.log(_.sample(holidays))
 console.log(_.findIndex(holidays, {name:"April Fools"}))
+
+
+// Create a new Express application
+// Create a router file and import it into the server
+// Create a route /name that renders your name
+// Create a route /greeting that renders your name and student number
+// Create route /add that accepts x and y as get params and returns the result
+// Create a route /calculate that accepts a, b, and operation to perform (+, -, *, /, **)
+// Use Postman to handle your incoming requests and provide screenshots for each step. Put them into a screenshots folder in y our submission

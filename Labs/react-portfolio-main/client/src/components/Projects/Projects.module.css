@@ -1,0 +1,46 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout for Project Cards */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Error Message Styling */
+.errorMessage {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Stacks cards on smaller screens */
+  }
+}

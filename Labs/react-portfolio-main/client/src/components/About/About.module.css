@@ -1,0 +1,154 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 30px; /* Added spacing */
+  text-align: center; /* ✅ Ensures all titles are centered */
+}
+
+/* ✅ Ensures Overview, Education, and Experience headings are centered */
+.centeredTitle {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Changed to column for better stacking */
+  align-items: center;
+  gap: 30px; /* Added spacing */
+}
+
+.aboutImage {
+  width: 35%;
+  margin-bottom: 20px; /* Added spacing below the image */
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adjusted gap to be consistent */
+  width: 100%;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  width: 100%; /* Ensures it stretches properly */
+}
+
+.aboutItem img {
+  width: 50px; /* Ensures icons are consistent */
+  margin-right: 15px;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutItem p {
+  font-size: 20px;
+}
+
+/* New Styles for Education Section */
+.educationSection {
+  width: 100%;
+  margin-top: 40px; /* Adds space between About and Education */
+}
+
+.educationItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.educationItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.educationItem img {
+  width: 50px; /* Ensures consistency */
+  margin-right: 15px;
+}
+
+.educationItem h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.educationItem p {
+  font-size: 18px;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .educationItems {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

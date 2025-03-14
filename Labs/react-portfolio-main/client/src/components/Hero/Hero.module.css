@@ -1,0 +1,133 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 40px; /* Added spacing to avoid overlap */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+  max-width: 600px; /* Ensures text doesn't stretch too wide */
+  line-height: 1.5; /* Improved readability */
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Image (New Image Integration) */
+.heroImg {
+  width: 40%; /* Adjust width for better fit */
+  max-width: 400px; /* Prevents image from getting too large */
+  border-radius: 15px; /* Smooth border to match design */
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for better integration */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  animation: floating 3s ease-in-out infinite;
+}
+
+.heroImg:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 50px; /* Reduce title size for smaller screens */
+  }
+
+  .description {
+    font-size: 22px; /* Adjust text size */
+  }
+
+  .heroImg {
+    width: 60%;
+    max-width: 300px; /* Adjusted for mobile */
+  }
+}

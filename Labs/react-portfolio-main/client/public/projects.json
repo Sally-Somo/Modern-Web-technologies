@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Modern Web Technologies",
+      "description": "Bootstrap Practice Lab.",
+      "skills": ["Bootstrap", "HTML", "CSS"],
+      "githubLink": "https://github.com/Sally-Somo/Modern-Web-technologies"
+    },
+    {
+      "title": "Modern Web Technologies",
+      "description": "An interactive quiz application using JavaScript.",
+      "skills": ["JavaScript", "HTML", "CSS"],
+      "githubLink": "https://github.com/Sally-Somo/Modern-Web-technologies"
+    },
+    {
+      "title": "Modern Web Technologies",
+      "description": "A responsive website built with Bootstrap.",
+      "skills": ["Bootstrap", "HTML", "CSS"],
+      "githubLink": "https://github.com/Sally-Somo/Modern-Web-technologies"
+    }
+  ]
+  

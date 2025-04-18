@@ -1,0 +1,4 @@
+npm init -y
+modify the package to also have type module
+
+npm i express cor dotenv mongoose nodemon
